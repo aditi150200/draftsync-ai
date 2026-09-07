@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DraftSync AI — Write better, together</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav><a class="brand"><b>DraftSync</b><span>AI</span></a><div class="doc-title"><span></span>Editorial manifesto</div><div class="people" id="people"></div></nav>
+  <main>
+    <section class="intro"><p class="eyebrow">LIVE COLLABORATION WORKSPACE</p><h1>Write better,<br><i>together.</i></h1><p>Shape ideas with your team in real time, then use explainable writing intelligence to make every sentence clearer.</p></section>
+    <section class="workspace">
+      <div class="toolbar"><div><button class="active">Edit</button><button id="analyze">Analyze writing</button></div><div class="sync"><span></span><b id="sync-label">Connecting…</b><small id="version">v0</small></div></div>
+      <div class="grid">
+        <article><label>DOCUMENT</label><textarea id="editor" spellcheck="true" aria-label="Collaborative document"></textarea><footer><span id="words">0 words</span><span id="remote"></span></footer></article>
+        <aside><div class="aside-head"><div><label>WRITING INTELLIGENCE</label><h2>Your editorial pulse</h2></div><div class="score" id="score">—</div></div><div id="suggestions"><p class="empty">Select “Analyze writing” to review clarity, precision, and voice.</p></div></aside>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast"></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
+
